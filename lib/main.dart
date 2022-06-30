@@ -56,11 +56,12 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[200],
-                      border: Border.all(color: Colors.white),
+                      border: Border.all(color: Colors.transparent),
                       borderRadius: BorderRadius.circular(12)),
                   child: Padding(
                     padding: const EdgeInsets.only(left: 20),
                     child: TextField(
+                      style: TextStyle(fontWeight: FontWeight.bold),
                       decoration: InputDecoration(
                           border: InputBorder.none, hintText: 'Email'),
                     ),
@@ -75,14 +76,15 @@ class _LoginScreenState extends State<LoginScreen> {
                 child: Container(
                   decoration: BoxDecoration(
                       color: Colors.grey[200],
-                      border: Border.all(color: Colors.white),
+                      border: Border.all(color: Colors.transparent),
                       borderRadius: BorderRadius.circular(12)),
                   child: Padding(
                     padding: const EdgeInsets.only(left: 20),
                     child: TextField(
+                      style: TextStyle(fontWeight: FontWeight.bold),
                       obscureText: true,
                       decoration: InputDecoration(
-                          border: InputBorder.none, hintText: 'Password'),
+                          border: InputBorder.none, hintText: ('Password')),
                     ),
                   ),
                 ),
